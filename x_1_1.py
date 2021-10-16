@@ -3,7 +3,7 @@
 # 「print()」で表示している箇所を「kirakira_print()」で表示するように修正してください。
 
 def kirakira_print(string):
-    print('✰⋆*☽✹' + string + '✹☽*⋆✰')
+    print('✰⋆*☽✹' + string + '✹☽*⋆✰')
 
 
 kirakira_print('むかしむかし、')
