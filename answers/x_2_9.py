@@ -2,7 +2,7 @@
 #
 # 「2-8」のように関数の中で自分自身を呼び出すものを「再帰関数」といいます
 # 再帰関数を使って全てのメンバーを１行づつ表示してください
-# ヒント値がリストがどうかを「type(members) == list」で判定します
+# ヒント: リスト内の要素がリストでなければ「print()」で値を表示してリストであれば自身の関数を呼び出します
 
 members = [
     ['桃太郎', 'いぬ', 'さる', 'きじ', ['赤鬼', '青鬼', '黄鬼']],
@@ -11,12 +11,12 @@ members = [
 ]
 
 
-def loop(members):
+def dig(members):  # 関数名は自由につけて良いのですがここでは掘り下げる(dig)という関数名にしました
     if type(members) == list:
         for member in members:
-            loop(member)
+            dig(member)
     else:
         print(members)
 
 
-loop(members)
+dig(members)

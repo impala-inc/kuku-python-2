@@ -9,6 +9,6 @@ def func_x(n):
         return n * func_x(n - 1)
 
 
-a = func_x(4)  # => 1(1 * 1)
+a = func_x(5)  # => 120
 
 print(a)
