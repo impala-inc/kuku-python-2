@@ -3,18 +3,18 @@
 # MyListクラスに最後の要素を返す「last()」とリストの長さを返す「length()」というメソッドを定義してください
 
 class MyList(list):
-    def length(self):
-        return len(self)
-
     def first(self):
         return self[0]
 
     def last(self):
         return self[-1]
 
+    def length(self):
+        return len(self)
 
-sneakers = MyList(['adidas', 'new balance', 'Nike', 'PUMA'])
 
-print(sneakers.first())
-print(sneakers.last())
-print(sneakers.length())
+sneaker_brands = MyList(['adidas', 'new balance', 'Nike', 'PUMA'])
+
+print(sneaker_brands.first())
+print(sneaker_brands.last())
+print(sneaker_brands.length())

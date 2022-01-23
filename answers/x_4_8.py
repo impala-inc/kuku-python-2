@@ -25,6 +25,6 @@ class MyStr2(MyStr):
         return super().upper()
 
 
-sneakers = MyStr2('adidas Nike PUMA')
-print(sneakers.upper())
-print(sneakers.lower())
+sneaker_brands = MyStr2('adidas Nike PUMA')
+print(sneaker_brands.upper())
+print(sneaker_brands.lower())

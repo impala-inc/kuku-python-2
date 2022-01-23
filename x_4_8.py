@@ -16,4 +16,4 @@ class MyStr(str):
         return '<大文字と小文字を反転させます>' + super().swapcase()
 
 
-sneakers = MyStr('adidas Nike PUMA')
+sneaker_brands = MyStr('adidas Nike PUMA')

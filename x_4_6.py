@@ -24,12 +24,12 @@ class MyStr(str):
         return '<大文字と小文字を反転させます>'
 
 
-sneakers = MyStr('adidas Nike PUMA')
+sneaker_brands = MyStr('adidas Nike PUMA')
 
-a = sneakers.upper()
-b = sneakers.lower()
-c = sneakers.title()
-d = sneakers.swapcase()
+a = sneaker_brands.upper()
+b = sneaker_brands.lower()
+c = sneaker_brands.title()
+d = sneaker_brands.swapcase()
 
 # print(a)
 # print(b)
