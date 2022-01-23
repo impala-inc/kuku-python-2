@@ -19,9 +19,11 @@ try:
     if card_number != '1111-1111-1111-1111':
         raise NumberError
     print('ご購入ありがとうございます')
-except StockError:
+except StockError as e:
     print('在庫切れです')
-except NumberError:
+    raise e
+except NumberError as e:
     print('カードエラー')
+    raise e
 finally:
     print('またのご利用お待ちしています')

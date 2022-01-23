@@ -11,10 +11,8 @@ def is_adult(age):
 
 class TestMethods(unittest.TestCase):
 
-    def test_is_adult_true(self):
+    def test_is_adult(self):
         self.assertTrue(is_adult(20))
-
-    def test_is_adult_false(self):
         self.assertFalse(is_adult(19))
 
 

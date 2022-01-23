@@ -1,4 +1,4 @@
-# x_6_9
+# x_6_8
 #
 #
 
@@ -11,17 +11,18 @@ class NumberError(Exception):
 
 
 order_count = input('きび団子を何個注文しますか？:')
-card_number = input('カード番号を入力してください？(例、0000-0000-0000-0000):')
+card_number = input('カード番号を入力してください？(例、0000-0000):')
 
 try:
     if int(order_count) > 100:
         raise StockError
-    if card_number != '1111-1111-1111-1111':
+    if card_number != '1111-1111':
         raise NumberError
-    print('ご購入ありがとうございます')
 except StockError:
     print('在庫切れです')
 except NumberError:
     print('カードエラー')
+else:
+    print('ご購入ありがとうございます')
 finally:
-    print('またのご利用お待ちしています')
+    print('ご利用ありがとうございました')

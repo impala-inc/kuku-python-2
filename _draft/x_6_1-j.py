@@ -3,21 +3,21 @@
 # 「おわり4」まで表示できるようにコードを修正してください
 
 try:
-    ['桃太郎', 'いぬ', 'さる', 'とり'][5]  # IndexErrorエラーが発生
+    raise IndexError
 except IndexError:
     print('IndexErrorエラーを無視します')
 
 
 print('おわり1')
 
-100 + 'あいうえお'
+raise ValueError
 
 print('おわり2')
 
-int('あいうえお')
+raise TypeError
 
 print('おわり3')
 
-100 / 0
+raise ZeroDivisionError
 
 print('おわり4')

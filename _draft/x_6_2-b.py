@@ -1,7 +1,15 @@
-# 6の段「エラーと例外処理 ~ 5」
+# 6の段「エラーと例外処理 ~ 2」
 #
-# 数字以外の値を入力した場合は「ValueError。数字を入力してください」と表示されます
-# isinstance関数を利用して0を入力した時に「ZeroDivisionError。0以外の数字を入力してください」と表示するようにコードを追加してください
+# マイナスの値が入力された時にMinusErrorを発生させてください
+
+class MinusError(Exception):
+    pass
+
+
+try:
+    raise MinusError('マイナスの値が入力されました')
+except MinusError as e:
+    print(e)
 
 total_price = 4000
 number_of_people = input('合計で4000円です。何人でお支払いされますか？:')

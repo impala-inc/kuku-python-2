@@ -5,4 +5,4 @@
 try:
     'あ' + 1
 except TypeError:
-    print('違う型のデータを処理しようとしました')
+    print('型が違います')

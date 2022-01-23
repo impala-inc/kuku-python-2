@@ -15,5 +15,6 @@ prefectures = [
 ]
 
 for pref in prefectures:
-    if re.search(r'山.?県', pref):
-        print(re.search(r'〒\d{3}-\d{4}', pref)[0])
+    result = re.search(r'(〒\d{3}-\d{4}) 山.?県', pref)
+    if result:
+        print(result[1])
