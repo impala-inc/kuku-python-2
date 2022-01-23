@@ -24,14 +24,14 @@ class MyStr(str):
         return '<大文字と小文字を反転させます>' + super().swapcase()
 
 
-sneakers = MyStr('adidas Nike PUMA')
+sneaker_brands = MyStr('adidas Nike PUMA')
 
-a = sneakers.upper()
-b = sneakers.lower()
-c = sneakers.title()
-d = sneakers.swapcase()
+a = sneaker_brands.upper()
+b = sneaker_brands.lower()
+c = sneaker_brands.title()
+d = sneaker_brands.swapcase()
 
 print(a)  # => <大文字にします>ADIDAS NIKE PUMA (super().upper()で上書き前の結果を追加した)
-print(b)  # => <小文字にします>adidas nike puma (super().upper()で上書き前の結果を追加した)
-print(c)  # => <題名っぽくします>Adidas Nike Puma (super().upper()で上書き前の結果を追加した)
-print(d)  # => <大文字と小文字を反転させます>ADIDAS nIKE puma (super().upper()で上書き前の結果を追加した)
+print(b)  # => <小文字にします>adidas nike puma (super().lower()で上書き前の結果を追加した)
+print(c)  # => <題名っぽくします>Adidas Nike Puma (super().title()で上書き前の結果を追加した)
+print(d)  # => <大文字と小文字を反転させます>ADIDAS nIKE puma (super().swapcase()で上書き前の結果を追加した)

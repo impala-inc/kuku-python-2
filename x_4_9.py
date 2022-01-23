@@ -7,6 +7,6 @@ class MyList(list):
         return self[0]
 
 
-sneakers = MyList(['adidas', 'new balance', 'Nike', 'PUMA'])
+sneaker_brands = MyList(['adidas', 'new balance', 'Nike', 'PUMA'])
 
-print(sneakers.first())
+print(sneaker_brands.first())

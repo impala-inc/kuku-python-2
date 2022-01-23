@@ -1,12 +1,23 @@
-# x_6_2
+# 6の段「エラーと例外処理 ~ 2」
 #
-# 例外処理を使うことで数字が入力されるまで何度でも入力を繰り返すように修正してください。
-
-num = input('数字を入力してください:')
+# 「おわり4」まで表示できるようにコードを修正してください
 
 try:
-    num = int(num)
-except ValueError:
-    print('数字に変換できない値が入力されました')
+    raise IndexError
+except IndexError:
+    print('IndexErrorエラーを無視します')
 
-print(num)
+
+print('おわり1')
+
+raise ValueError
+
+print('おわり2')
+
+raise TypeError
+
+print('おわり3')
+
+raise ZeroDivisionError
+
+print('おわり4')
