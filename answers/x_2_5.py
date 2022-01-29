@@ -4,7 +4,7 @@
 # 「a」「b」「c」「d」がそれぞれどんな値となるかを予想してください
 
 def sample(name):
-    favorite = 'オムライス'
+    food = 'オムライス'
     print(locals())
 
 

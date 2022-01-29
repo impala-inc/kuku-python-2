@@ -1,6 +1,6 @@
 # x_5_3
 #
-# 「私のHPはXXです」と表示する関数「my_hp()」を追加してください
+# 「私のHPはXXです」と自分のHPを表示する関数「my_hp()」を追加してください
 
 class OnitaijiMember:
     def __init__(self, name, hit_points):

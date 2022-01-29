@@ -9,5 +9,5 @@ def teinei_input(string):
 name = input('あなたの名前を入力してください:')
 print('私の名前は' + name + 'です')
 
-favorite = input('好きな食べ物を入力してください:')
-print('好きな食べ物は' + favorite + 'です')
+food = input('好きな食べ物を入力してください:')
+print('好きな食べ物は' + food + 'です')
