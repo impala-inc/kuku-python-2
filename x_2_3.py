@@ -1,17 +1,19 @@
 # x_2_3
 #
-# 「a」「b」「c」「d」がそれぞれどんな値となるかを予想してください
+# q_1 ~ q_4がそれぞれどんな値となるかを予想してください
+
+from module import qa
+
 
 def kuku(a=9, b=9):
     return a * b
 
 
-a = kuku(6, 8)
-b = kuku()
-c = kuku(3)
-d = kuku(b=4)
+q_1 = kuku(6, 8)
+q_2 = kuku()
+q_3 = kuku(3)
+q_4 = kuku(b=4)
 
-# print(a)
-# print(b)
-# print(c)
-# print(d)
+
+# ここはとりあえず無視
+qa.execute(locals())
