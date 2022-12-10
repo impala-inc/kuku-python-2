@@ -4,7 +4,7 @@
 
 try:
     'あ' + 1
-except:
+except TypeError:
     print('型の違いによるエラーが発生しました')
 
 members = ['桃太郎', 'いぬ', 'さる', 'きじ']

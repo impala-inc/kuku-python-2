@@ -1,6 +1,6 @@
 # x_2_6
 #
-#　問題を準備中です
+# 問題を準備中です
 
 first_name = '山田'
 last_name = '太郎'
@@ -15,6 +15,7 @@ def change_first_name():
 
 def change_last_name():
     last_name = '四郎'
+    print(last_name)
 
 
 def change_list():

@@ -6,6 +6,6 @@ try:
     'あ' + 1
     members = ['桃太郎', 'いぬ', 'さる', 'きじ']
     members[5]
-except:
+except TypeError:
     print('型の違いによるエラーが発生しました')
     print('リストの範囲外です')

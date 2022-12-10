@@ -42,7 +42,7 @@ try:
         raise BarError
     else:
         raise BazError
-except (FooError, BarError, BazError) as e:
+except (FooError, BarError, BazError):
     print('FooError、BarError、BazErrorを無視します')
 
 

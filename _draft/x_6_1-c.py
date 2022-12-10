@@ -8,5 +8,5 @@ number_of_people = input('合計で4000円です。何人でお支払いされ�
 try:
     price = total_price // int(number_of_people)
     print('お一人あたり' + str(price) + '円のお支払いになります')
-except:
+except ZeroDivisionError:
     print('入力値が不正です')

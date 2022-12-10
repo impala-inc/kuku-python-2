@@ -13,7 +13,9 @@ class Janken():
         return self.hand == other.hand
 
     def __gt__(self, other):
-        return (self.hand == 'グー' and other.hand == 'チョキ') or (self.hand == 'チョキ' and other.hand == 'パー') or (self.hand == 'パー' and other.hand == 'グー')
+        return (self.hand == 'グー' and other.hand == 'チョキ') \
+            or (self.hand == 'チョキ' and other.hand == 'パー') \
+            or (self.hand == 'パー' and other.hand == 'グー')
 
 
 a = Janken()

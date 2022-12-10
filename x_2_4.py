@@ -3,23 +3,23 @@
 # 「a」「b」「c」「d」がそれぞれどんな値となるかを予想してください
 
 def full_name_a(first_name, last_name):
-    a = first_name + last_name
+    first_name + last_name
     # print(a)
 
 
 def full_name_b(first_name, last_name):
     first_name = '山中'
-    b = first_name + last_name
+    first_name + last_name
     # print(b)
 
 
 def full_name_c(first_name):
-    c = first_name + last_name
+    first_name + last_name
     # print(c)
 
 
 def full_name_d():
-    d = first_name + last_name
+    first_name + last_name
     # print(d)
 
 

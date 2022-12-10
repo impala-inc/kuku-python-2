@@ -2,7 +2,6 @@
 #
 #
 
-from ast import pattern
 import re
 
 

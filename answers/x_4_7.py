@@ -31,7 +31,7 @@ b = sneaker_brands.lower()
 c = sneaker_brands.title()
 d = sneaker_brands.swapcase()
 
-print(a)  # => <大文字にします>ADIDAS NIKE PUMA (super().upper()で上書き前の結果を追加した)
-print(b)  # => <小文字にします>adidas nike puma (super().lower()で上書き前の結果を追加した)
-print(c)  # => <題名っぽくします>Adidas Nike Puma (super().title()で上書き前の結果を追加した)
-print(d)  # => <大文字と小文字を反転させます>ADIDAS nIKE puma (super().swapcase()で上書き前の結果を追加した)
+print(a)  # => <大文字にします>ADIDAS NIKE PUMA
+print(b)  # => <小文字にします>adidas nike puma
+print(c)  # => <題名っぽくします>Adidas Nike Puma
+print(d)  # => <大文字と小文字を反転させます>ADIDAS nIKE puma
